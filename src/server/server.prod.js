@@ -21,7 +21,7 @@ import SocketIo from 'socket.io';
 const app = express();
 
 //set env vars
-process.env.MONGOLAB_URI = process.env.MONGOLAB_URI || 'mongodb://localhost/chat_dev';
+process.env.MONGOLAB_URI = process.env.MONGOLAB_URI || 'mongodb://root:admin123@localhost:27017/chat_dev?authSource=admin';
 process.env.PORT = process.env.PORT || 3000;
 
 // connect our DB
